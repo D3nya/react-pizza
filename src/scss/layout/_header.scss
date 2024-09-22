@@ -1,0 +1,22 @@
+@use "../utilities" as *;
+@use "sass:map";
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(24, 24, 24, 0.25);
+
+  padding: 40px 70px;
+
+  &__logo {
+  }
+
+  &__search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__cart-info {
+  }
+}

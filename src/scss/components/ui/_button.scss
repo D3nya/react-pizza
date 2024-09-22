@@ -1,0 +1,16 @@
+@use "../../utilities" as *;
+@use "sass:map";
+
+button {
+  border: none;
+  margin: 0;
+  padding: 0;
+  overflow: visible;
+
+  cursor: pointer;
+
+  background: transparent;
+  color: inherit;
+
+  font: inherit;
+}

@@ -1,0 +1,29 @@
+@use "../utilities" as *;
+
+.home {
+  flex: 1 0 auto;
+  padding: 40px 70px;
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
+  &__categories {
+  }
+
+  &__sort {
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 50px 20px;
+  }
+
+  &__pizza-item {
+  }
+}

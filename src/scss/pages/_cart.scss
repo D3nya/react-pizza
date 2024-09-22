@@ -1,0 +1,132 @@
+@use "../utilities" as *;
+
+.cart {
+  flex: 1 0 auto;
+  padding: 40px 70px;
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  &__title {
+    display: flex;
+    align-items: center;
+
+    font-size: 32px;
+
+    img {
+      width: 40px;
+      height: 40px;
+      margin-right: 5px;
+    }
+  }
+
+  &__clear {
+    display: flex;
+    align-items: center;
+    color: $gray-color;
+    font-size: 18px;
+
+    transition: color $transition-duration ease-in-out;
+
+    svg {
+      width: 20px;
+      height: 20px;
+      margin-right: 2px;
+      position: relative;
+      top: -2px;
+
+      transition: fill $transition-duration ease-in-out;
+    }
+
+    &:hover {
+      color: $text-color;
+
+      svg {
+        fill: $text-color;
+      }
+    }
+  }
+
+  &__items {
+    margin-bottom: 20px;
+  }
+
+  &__details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+
+    span {
+      font-size: 22px;
+      &:last-of-type {
+        b {
+          color: $brand-color;
+        }
+      }
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__link {
+    background-color: $text-color;
+    color: $white-color;
+    border-radius: 30px;
+    padding: 15px 30px;
+    cursor: pointer;
+    font-weight: 600;
+
+    display: flex;
+    align-items: center;
+    transition: background-color $transition-duration ease-in-out;
+
+    img {
+      width: 15px;
+      height: 15px;
+      margin-right: 5px;
+      position: relative;
+      top: -1px;
+    }
+
+    &:hover {
+      background-color: darken($gray-color, 20%);
+    }
+
+    &:active {
+      background-color: darken($gray-color, 30%);
+    }
+  }
+
+  &__buy {
+    padding: 15px 30px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    color: $white-color;
+    padding: 16px;
+    background-color: $brand-color;
+    border: 1px solid $brand-color;
+    border-radius: 30px;
+
+    transition: background-color $transition-duration ease-in-out,
+      transform $transition-duration ease-in-out;
+
+    &:hover {
+      background-color: darken($brand-color, 8%);
+    }
+
+    &:active {
+      background-color: darken($brand-color, 8%);
+      transform: translateY(1px);
+    }
+  }
+}

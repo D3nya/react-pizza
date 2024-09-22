@@ -1,0 +1,22 @@
+@use "../utilities" as *;
+@use "sass:map";
+
+// Общие стили для контейнера ошибки
+.error {
+  text-align: center;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 600px;
+
+  // Стили для заголовка
+  h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+
+  p {
+    font-size: 20px;
+    line-height: 1.5;
+    color: $gray-color;
+  }
+}

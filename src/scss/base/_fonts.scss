@@ -1,0 +1,156 @@
+@use "../utilities" as *;
+
+/*
+ * Example:
+ * @include font-face(
+ *   'Name',
+ *   '../fonts/Name',
+ *   400, // Font weight
+ *   normal, // Font style
+ *   eot woff2 woff ttf // Font formats
+ * );
+ */
+
+// 900
+
+@include font-face(
+  Nunito,
+  "../assets/fonts/Nunito/Nunito-Black",
+  900,
+  normal,
+  ttf
+);
+
+@include font-face(
+  Nunito,
+  "../assets/fonts/Nunito/Nunito-BlackItalic",
+  900,
+  italic,
+  ttf
+);
+
+// 800
+
+@include font-face(
+  Nunito,
+  "../assets/fonts/Nunito/Nunito-ExtraBold",
+  800,
+  normal,
+  ttf
+);
+
+@include font-face(
+  Nunito,
+  "../assets/fonts/Nunito/Nunito-ExtraBoldItalic",
+  800,
+  italic,
+  ttf
+);
+
+// 700
+
+@include font-face(
+  Nunito,
+  "../assets/fonts/Nunito/Nunito-Bold",
+  700,
+  normal,
+  ttf
+);
+
+@include font-face(
+  Nunito,
+  "../assets/fonts/Nunito/Nunito-BoldItalic",
+  700,
+  italic,
+  ttf
+);
+
+// 600
+
+@include font-face(
+  Nunito,
+  "../assets/fonts/Nunito/Nunito-SemiBold",
+  600,
+  normal,
+  ttf
+);
+
+@include font-face(
+  Nunito,
+  "../assets/fonts/Nunito/Nunito-SemiBoldItalic",
+  600,
+  italic,
+  ttf
+);
+
+// 500
+
+@include font-face(
+  Nunito,
+  "../assets/fonts/Nunito/Nunito-Medium",
+  500,
+  normal,
+  ttf
+);
+
+@include font-face(
+  Nunito,
+  "../assets/fonts/Nunito/Nunito-MediumItalic",
+  500,
+  italic,
+  ttf
+);
+
+// 400
+
+@include font-face(
+  Nunito,
+  "../assets/fonts/Nunito/Nunito-Regular",
+  400,
+  normal,
+  ttf
+);
+
+@include font-face(
+  Nunito,
+  "../assets/fonts/Nunito/Nunito-Italic",
+  400,
+  italic,
+  ttf
+);
+
+// 300
+
+@include font-face(
+  Nunito,
+  "../assets/fonts/Nunito/Nunito-Light",
+  300,
+  normal,
+  ttf
+);
+
+@include font-face(
+  Nunito,
+  "../assets/fonts/Nunito/Nunito-LightItalic",
+  300,
+  italic,
+  ttf
+);
+
+// 200
+
+@include font-face(
+  Nunito,
+  "../assets/fonts/Nunito/Nunito-ExtraLight",
+  200,
+  normal,
+  ttf
+);
+
+@include font-face(
+  Nunito,
+  "../assets/fonts/Nunito/Nunito-ExtraLightItalic",
+  200,
+  italic,
+  ttf
+);

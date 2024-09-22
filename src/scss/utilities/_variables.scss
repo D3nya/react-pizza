@@ -1,0 +1,27 @@
+// Regular font family
+$text-font-stack: "Nunito", "Open Sans", "Helvetica Neue Light",
+  "Helvetica Neue", "Helvetica", "Arial", sans-serif !default;
+
+// Container's maximum width
+$max-width: 90% !default;
+
+// Wrapper margin
+$wrapper-margin: 50px;
+
+// Transition duration
+$transition-duration: 0.1s !default;
+
+// Border radius
+$border-radius: 10px !default;
+
+// Breakpoints map
+// Example:
+// map.get($breakpoints, 'medium')
+$breakpoints: (
+  "small": 320px,
+  "medium": 768px,
+  "large": 1024px,
+  "xl": 1280px,
+  "xxl": 1600px,
+  "xxxl": 1920px,
+) !default;

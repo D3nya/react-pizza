@@ -1,0 +1,22 @@
+@use "../../utilities" as *;
+@use "sass:map";
+
+input {
+  padding: 0;
+  margin: 0;
+  border: 1px solid $text-color;
+  border-radius: $border-radius;
+  box-shadow: none;
+  background-color: transparent;
+  font: inherit;
+  color: inherit;
+  letter-spacing: inherit;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+input {
+  overflow: visible;
+}

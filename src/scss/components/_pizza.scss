@@ -1,0 +1,237 @@
+@use "../utilities" as *;
+@use "sass:map";
+
+.pizza {
+  display: flex;
+  justify-content: space-evenly;
+
+  &__left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__image {
+    max-width: 500px;
+  }
+
+  &__right {
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__name {
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 0.2px;
+    line-height: 1.5;
+  }
+
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0px;
+
+    span {
+      margin-right: 5px;
+      border-radius: 30px;
+      padding: 5px 10px;
+      font-weight: 600;
+    }
+
+    &--fresh {
+      background-color: $brand-color;
+      color: $white-color;
+    }
+
+    &--hit {
+      background-color: $orange-color;
+    }
+  }
+
+  &__categories {
+    list-style: none;
+    padding-inline-start: 0px;
+    display: flex;
+
+    li {
+      padding: 5px 10px;
+      border-radius: 30px;
+      font-weight: 600;
+      background-color: $brand-color;
+      color: $white-color;
+      margin-right: 5px;
+    }
+
+    .meat {
+      background-color: #aa3c3b;
+    }
+
+    .spicy {
+      background-color: #ff8100;
+    }
+
+    .vegetarian {
+      background-color: #aac61f;
+    }
+
+    .grill {
+      background-color: #603e2c;
+    }
+  }
+
+  &__rating {
+    padding: 5px 10px;
+    border-radius: 30px;
+    font-weight: 600;
+    background-color: #f6dc27;
+    color: $text-color;
+  }
+
+  &__title {
+    margin: 5px 0px;
+  }
+
+  &__composition {
+    margin-bottom: 10px;
+    font-weight: 300;
+    color: $gray-color;
+    font-size: 14px;
+    max-width: 65%;
+  }
+
+  &__select {
+    margin-bottom: 10px;
+
+    li {
+      padding: 10px 25px;
+    }
+  }
+
+  &__price {
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 26px;
+    letter-spacing: 0.25px;
+    padding-left: 10px;
+  }
+
+  &__actions {
+    margin-top: 15px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  &__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 30px;
+
+    text-align: center;
+
+    background-color: $white-color;
+    border: 1px solid $brand-color;
+    border-radius: 30px;
+
+    cursor: pointer;
+
+    transition: background-color $transition-duration ease-in-out,
+      transform $transition-duration ease-in-out;
+
+    &:hover {
+      background-color: $brand-color;
+
+      span {
+        color: $white-color;
+      }
+
+      i {
+        background-color: $white-color;
+        color: $brand-color;
+      }
+
+      .pizza__svg {
+        fill: $white-color;
+      }
+    }
+
+    &:active {
+      background-color: darken($brand-color, 8%);
+      transform: translateY(1px);
+
+      span {
+        color: $white-color;
+      }
+
+      i {
+        background-color: $white-color;
+        color: $brand-color;
+      }
+
+      .pizza-item__svg {
+        fill: $white-color;
+      }
+    }
+
+    span {
+      color: $brand-color;
+      font-weight: 600;
+      font-size: 16px;
+      margin-right: 3px;
+
+      transition: color $transition-duration ease-in-out;
+    }
+
+    i {
+      border-radius: 30px;
+      background-color: $brand-color;
+      color: $white-color;
+      font-weight: 600;
+      width: 22px;
+      height: 22px;
+      font-size: 14px;
+      line-height: 22px;
+      margin-left: 3px;
+
+      transition: color $transition-duration ease-in-out,
+        background-color $transition-duration ease-in-out;
+    }
+  }
+
+  &__svg {
+    width: 14px;
+    height: 14px;
+    fill: $brand-color;
+
+    margin-right: 4px;
+
+    position: relative;
+    bottom: 1px;
+
+    transition: fill $transition-duration ease-in-out;
+  }
+
+  &__link {
+    background-color: $text-color;
+    color: $white-color;
+    border-radius: 30px;
+    padding: 15px 30px;
+    cursor: pointer;
+    font-weight: 600;
+
+    transition: background-color 0.1s ease-in-out;
+
+    &:hover {
+      background-color: darken($gray-color, 20%);
+    }
+
+    &:active {
+      background-color: darken($gray-color, 30%);
+    }
+  }
+}

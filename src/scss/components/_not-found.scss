@@ -1,0 +1,13 @@
+@use "../utilities" as *;
+@use "sass:map";
+
+.not-found {
+  text-align: center;
+
+  &__smile {
+    font-size: 64px;
+  }
+
+  &__title {
+  }
+}

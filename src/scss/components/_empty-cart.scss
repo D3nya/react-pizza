@@ -1,0 +1,45 @@
+@use "../utilities" as *;
+@use "sass:map";
+
+.empty-cart {
+  flex: 1 0 auto;
+  padding: 40px 70px;
+  text-align: center;
+
+  &__title {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 15px;
+  }
+
+  &__text {
+    font-size: 20px;
+    line-height: 145.4%;
+    letter-spacing: 0.01em;
+    color: $text-color;
+  }
+
+  &__img {
+    display: block;
+    width: 300px;
+    margin: 45px auto 60px;
+  }
+
+  &__link {
+    background-color: $text-color;
+    color: $white-color;
+    border-radius: 30px;
+    padding: 15px 30px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color $transition-duration ease-in-out;
+
+    &:hover {
+      background-color: darken($gray-color, 20%);
+    }
+
+    &:active {
+      background-color: darken($gray-color, 30%);
+    }
+  }
+}

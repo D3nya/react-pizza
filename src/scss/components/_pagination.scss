@@ -1,0 +1,42 @@
+@use "../utilities" as *;
+@use "sass:map";
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+
+  button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    border: 1px solid rgba(24, 24, 24, 0.3);
+    border-radius: 50%;
+    background-color: #fff;
+    cursor: pointer;
+
+    transition: all $transition-duration ease-in-out;
+
+    &.active {
+      background-color: $brand-color;
+      color: $white-color;
+      border-color: $brand-color;
+    }
+
+    &:hover {
+      background-color: darken($brand-color, 8%);
+      color: $white-color;
+      border-color: $brand-color;
+    }
+
+    &:disabled {
+      cursor: auto;
+
+      &:hover {
+        background-color: $brand-color;
+        color: $white-color;
+        border-color: $brand-color;
+      }
+    }
+  }
+}

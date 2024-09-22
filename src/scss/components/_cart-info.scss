@@ -1,0 +1,59 @@
+@use "../utilities" as *;
+@use "sass:map";
+
+.cart-info {
+  display: flex;
+  align-items: center;
+
+  &__link {
+    display: flex;
+    align-items: center;
+
+    background-color: $brand-color;
+    padding: 15px 20px;
+
+    border-radius: 30px;
+    border: 1px solid transparent;
+
+    color: $white-color;
+
+    transition: background-color $transition-duration ease-in-out,
+      border-color $transition-duration ease-in-out;
+
+    &:hover {
+      background-color: darken($brand-color, 8%);
+    }
+
+    &:active {
+      background-color: darken($brand-color, 12%);
+      transform: translateY(1px);
+    }
+  }
+
+  &__total {
+    margin-right: 20px;
+    font-size: 16px;
+
+    position: relative;
+
+    &::after {
+      content: "";
+      background-color: rgba(255, 255, 255, 0.7);
+      width: 1px;
+      height: 30px;
+      position: absolute;
+      right: -10px;
+      bottom: -5px;
+    }
+  }
+
+  &__img {
+    width: 20px;
+    height: 20px;
+    margin-bottom: 2px;
+  }
+
+  &__count {
+    margin-left: 5px;
+  }
+}

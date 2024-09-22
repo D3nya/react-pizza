@@ -1,0 +1,22 @@
+@use "../utilities" as *;
+@use "sass:map";
+
+.footer {
+  background-color: $text-color;
+  border-bottom-right-radius: $border-radius;
+  border-bottom-left-radius: $border-radius;
+
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__logo {
+    color: $gray-color;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    color: $gray-color;
+  }
+}
